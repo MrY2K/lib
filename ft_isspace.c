@@ -6,11 +6,11 @@
 /*   By: achoukri <achoukri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 22:05:07 by achoukri          #+#    #+#             */
-/*   Updated: 2025/05/02 22:05:09 by achoukri         ###   ########.fr       */
+/*   Updated: 2025/09/26 17:31:11 by achoukri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isspace(char c)
+int	ft_isspace(char c)
 {
 	if (c == ' ' || c == '\t' || c == '\n'
 		|| c == '\v' || c == '\f' || c == '\r')

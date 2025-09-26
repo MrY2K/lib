@@ -6,14 +6,15 @@
 /*   By: achoukri <achoukri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 21:30:58 by achoukri          #+#    #+#             */
-/*   Updated: 2025/06/25 18:33:48 by achoukri         ###   ########.fr       */
+/*   Updated: 2025/09/26 17:31:33 by achoukri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * ft_atoi_improved - a9wad atoi in existence – convert ASCII string to int with optional error checking
+ * ft_atoi_improved - a9wad atoi in existence – 
+ * convert ASCII string to int with optional error checking
  *
  * This function parses a C‐string for an integer, handling:
  *   • leading whitespace
@@ -31,7 +32,7 @@
  *       – On any error (overflow, no digits, or non‐digit after digits)
  *         sets *flag = -1 and returns -69
  *       – On success leaves *flag unchanged (0) and returns the parsed value
-  *       – To use strict mode in your code :
+ *       – To use strict mode in your code :
  *           int flag = 0;
  *           int val  = ft_atoi_improved(str, &flag);
  *           if (flag != 0)
@@ -43,7 +44,6 @@
  * @return      parsed integer value, or -69 on error (always), or 0 on no‐digit
  *              in lax mode
  */
-
 
 static int	ft_isspace(char c)
 {
