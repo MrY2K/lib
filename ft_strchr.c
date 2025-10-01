@@ -17,6 +17,8 @@ char	*ft_strchr(const char *s, int c)
 	size_t	i;
 	char	tmp;
 
+	if (!s)
+		return (NULL);
 	tmp = (char)c;
 	i = 0;
 	while (s[i])
