@@ -6,7 +6,7 @@
 /*   By: achoukri <achoukri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 16:30:19 by achoukri          #+#    #+#             */
-/*   Updated: 2025/10/03 00:17:15 by achoukri         ###   ########.fr       */
+/*   Updated: 2025/10/03 00:23:49 by achoukri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ char	*clean_static_buffer_non_empty_no_nl(char **static_buffer)
 	return (free(*static_buffer), cleaned_buffer);
 }
 
-static int	is_empty_line(char *line)
+static int	static_is_empty_line(char *line)
 {
 	int	i;
 
@@ -112,7 +112,7 @@ char	*get_next_non_empty_line_no_nl(int fd)
 	if (!line)
 		return (NULL);
 	s_b[fd] = clean_static_buffer_non_empty_no_nl(&s_b[fd]);
-	if (is_empty_line(line))
+	if (static_is_empty_line(line))
 	{
 		free(line);
 		return (get_next_non_empty_line_no_nl(fd));

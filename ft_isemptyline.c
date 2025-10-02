@@ -6,13 +6,13 @@
 /*   By: achoukri <achoukri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 00:16:26 by achoukri          #+#    #+#             */
-/*   Updated: 2025/10/03 00:16:39 by achoukri         ###   ########.fr       */
+/*   Updated: 2025/10/03 00:22:22 by achoukri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	is_empty_line(char *line)
+int	is_empty_line(char *line)
 {
 	int	i;
 
