@@ -6,13 +6,14 @@
 /*   By: achoukri <achoukri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 16:30:19 by achoukri          #+#    #+#             */
-/*   Updated: 2025/10/02 20:18:03 by achoukri         ###   ########.fr       */
+/*   Updated: 2025/10/03 00:17:15 by achoukri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*read_to_static_buffer_non_empty_no_nl(int fd, char **static_buffer, char *buff)
+char	*read_to_static_buffer_non_empty_no_nl(int fd, char **static_buffer,
+			char *buff)
 {
 	ssize_t		bytes_read;
 	char		*tmp;
@@ -79,9 +80,18 @@ char	*clean_static_buffer_non_empty_no_nl(char **static_buffer)
 
 static int	is_empty_line(char *line)
 {
+	int	i;
+
 	if (!line || line[0] == '\0')
 		return (1);
-	return (0);
+	i = 0;
+	while (line[i])
+	{
+		if (!ft_isspace(line[i]))
+			return (0);
+		i++;
+	}
+	return (1);
 }
 
 char	*get_next_non_empty_line_no_nl(int fd)
