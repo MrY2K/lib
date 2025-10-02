@@ -45,7 +45,7 @@
  *              in lax mode
  */
 
-static int	ft_isspace(char c)
+static int	ft_static_isspace(char c)
 {
 	if (c == ' ' || c == '\t' || c == '\n'
 		|| c == '\v' || c == '\f' || c == '\r')
@@ -64,7 +64,7 @@ static int	skip_spaces(const char *str)
 	int	i;
 
 	i = 0;
-	while (ft_isspace(str[i]))
+	while (ft_static_isspace(str[i]))
 		i++;
 	return (i);
 }
