@@ -6,7 +6,7 @@
 /*   By: achoukri <achoukri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 21:36:30 by achoukri          #+#    #+#             */
-/*   Updated: 2025/04/24 12:07:51 by achoukri         ###   ########.fr       */
+/*   Updated: 2025/10/02 20:23:26 by achoukri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 // gnl
 char	*get_next_line(int fd);
 char	*get_next_line_no_nl(int fd);
+char	*get_next_non_empty_line_no_nl(int fd);
 
 // Error Handling:
 void	ft_perror(const char *s);
