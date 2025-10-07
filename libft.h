@@ -98,6 +98,7 @@ int		is_int(char *arg);
 int		hex_to_int(const char *hex);
 int		ft_atoi_base(const char *str, int str_base);
 void	sort_int_tab(int *tab, unsigned int size);
+int		ft_atoi_improved(const char *str, int *flag);
 
 // ft_prinf
 int		ft_printf(const char *str, ...);
