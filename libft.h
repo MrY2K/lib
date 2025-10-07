@@ -6,7 +6,7 @@
 /*   By: achoukri <achoukri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 21:36:30 by achoukri          #+#    #+#             */
-/*   Updated: 2025/10/03 00:22:07 by achoukri         ###   ########.fr       */
+/*   Updated: 2025/10/07 01:05:16 by achoukri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,5 +107,8 @@ int		ft_putnbr(int n);
 int		ft_putnbr_unsigned(unsigned int n);
 int		ft_putnbr_hex(unsigned long nbr, char format);
 int		ft_putadd(void *add);
+
+void	print_char_array(char **arr);
+void	free_char_array(char **arr);
 
 #endif
